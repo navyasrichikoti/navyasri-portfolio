@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070711">
+  <meta name="description" content="Navyasri Chikoti — AI/ML, Generative AI and Software Engineering portfolio.">
+  <title>Navyasri Chikoti | AI & Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+    }
+  }
+  </script>
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <div class="noise"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#home">N<span>.</span>C<span class="brand-dot">_</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a class="nav-contact" href="#contact">Let's connect ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+
+      <div class="hero-content reveal">
+        <div class="availability">
+          <span class="pulse"></span>
+          AI / ML · GENERATIVE AI · SOFTWARE
+        </div>
+
+        <p class="eyebrow">HELLO, WORLD. I'M</p>
+        <h1>Navyasri<br><span class="gradient-text">Chikoti.</span></h1>
+
+        <div class="role-line">
+          <span class="role-prefix">I build </span>
+          <span id="typedRole">intelligent systems.</span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Turning ideas into intelligent applications — from multi-agent AI
+          systems to machine learning products and data-driven experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contact">Get in touch <span>→</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <div><span class="meta-label">BASED IN</span><span>India 🇮🇳</span></div>
+          <div><span class="meta-label">EDUCATION</span><span>B.Tech CSE · AI/ML</span></div>
+          <div><span class="meta-label">CGPA</span><span>8.3 / 10</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual">
+        <!-- Profile photo -->
+        <div class="profile-frame">
+          <img
+            src="images/my_pic.jpeg"
+            alt="Navyasri Chikoti - AI/ML Developer"
+          >
+          <div class="profile-glow"></div>
+        </div>
+
+        <!-- Interactive 3D animation -->
+        <canvas id="spaceCanvas" aria-label="Interactive animated 3D particle sculpture"></canvas>
+
+        <div class="orb-label orb-label-one">
+          <span class="label-dot"></span> NEURAL NETWORKS
+        </div>
+        <div class="orb-label orb-label-two">CREATIVITY × CODE</div>
+        <div class="orbit-ring"></div>
+
+        <div class="visual-caption">
+          <span>FIG 01.</span> A UNIVERSE OF POSSIBILITIES
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        <span class="scroll-line"></span> SCROLL TO EXPLORE
+      </a>
+    </section>
+
+    <div class="ticker" aria-label="Areas of interest">
+      <div class="ticker-track">
+        <span>GENERATIVE AI ✳</span>
+        <span>SOFTWARE ENGINEERING ✳</span>
+        <span>MACHINE LEARNING ✳</span>
+        <span>DATA ANALYTICS ✳</span>
+        <span>GENERATIVE AI ✳</span>
+        <span>SOFTWARE ENGINEERING ✳</span>
+        <span>MACHINE LEARNING ✳</span>
+        <span>DATA ANALYTICS ✳</span>
+      </div>
+    </div>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / THE PERSON BEHIND THE CODE</p>
+        <h2>Curious mind.<br><span class="gradient-text">Builder's mindset.</span></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p class="large-copy">
+            I'm a Computer Science student specializing in AI & Machine Learning at
+            <strong>SR University.</strong>
+          </p>
+          <p>I enjoy building end-to-end applications that combine intelligent models, reliable backend systems, and thoughtful user experiences.</p>
+          <p>My work spans Generative AI agents, machine learning, computer vision, APIs, and analytics. I care about making technology useful, understandable, and responsible.</p>
+
+          <div class="about-links">
+            <a href="https://github.com/navyasrichikoti" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/navyasri-chikoti-5355b2350" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal">
+          <article class="stat-card"><span class="stat-icon">✳</span><strong>AI/ML</strong><span>Intelligent applications</span></article>
+          <article class="stat-card"><span class="stat-icon">⌘</span><strong>Full-stack</strong><span>APIs to interfaces</span></article>
+          <article class="stat-card"><span class="stat-icon">◎</span><strong>GenAI</strong><span>Agents & guardrails</span></article>
+          <article class="stat-card"><span class="stat-icon">▥</span><strong>Data</strong><span>Insights & analytics</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / MY TOOLKIT</p>
+        <h2>Ideas meet <span class="gradient-text">technology.</span></h2>
+        <p class="section-subtitle">Tools I use to turn problems into practical solutions.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="skill-number">01</span><div class="skill-icon">◈</div><h3>AI & Generative AI</h3><p>Building intelligent, structured and safety-aware AI workflows.</p><div class="tags"><span>Gemini</span><span>LangGraph</span><span>LangChain</span><span>Pydantic</span><span>LLMs</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">02</span><div class="skill-icon">⌘</div><h3>Machine Learning</h3><p>Model development, classification and image-based prediction.</p><div class="tags"><span>Python</span><span>Scikit-learn</span><span>PyTorch</span><span>CNN</span><span>TF-IDF</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">03</span><div class="skill-icon">⌬</div><h3>Software Engineering</h3><p>Developing APIs and full-stack applications with practical architecture.</p><div class="tags"><span>React</span><span>FastAPI</span><span>REST APIs</span><span>JWT</span><span>SQLAlchemy</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">04</span><div class="skill-icon">▤</div><h3>Data & Analytics</h3><p>Preparing, exploring and visualizing data to support decisions.</p><div class="tags"><span>SQL</span><span>Pandas</span><span>NumPy</span><span>EDA</span><span>Recharts</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">05</span><div class="skill-icon">▦</div><h3>Databases</h3><p>Working with relational databases and data-backed applications.</p><div class="tags"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB*</span><span>SQL</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">06</span><div class="skill-icon">↗</div><h3>Tools & Deployment</h3><p>Version control, cloud deployment and application delivery.</p><div class="tags"><span>Git</span><span>GitHub</span><span>Docker</span><span>Vercel</span><span>Render</span></div></article>
+      </div>
+      <p class="tiny-note">*MongoDB and other exploratory tools are listed as familiar technologies, not as project experience.</p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Things I've <span class="gradient-text">built.</span></h2>
+        <p class="section-subtitle">Real projects, practical problems, and lessons learned along the way.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-art art-ai"><div class="art-grid"></div><div class="ai-core"><span>AI</span></div><span class="art-tag">MULTI-AGENT SYSTEM</span><span class="art-index">01</span></div>
+          <div class="project-info"><div class="project-type">GENERATIVE AI · INFOSYS SPRINGBOARD</div><h3>AI Startup Idea Validator</h3><p>A multi-agent platform for market research, competitor analysis, SWOT and risk assessment, MVP recommendations, and go-to-market strategy. Includes prompt-injection guardrails and structured report generation.</p><div class="tags"><span>Python</span><span>LangGraph</span><span>LangChain</span><span>Gemini</span><span>Pydantic</span></div><a class="project-link" href="https://github.com/navyasrichikoti" target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-finance"><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="art-tag">INTELLIGENT FINANCE</span><span class="art-index">02</span></div>
+          <div class="project-info"><div class="project-type">FULL-STACK · GEONIXA</div><h3>AI Finance Assistant</h3><p>A personal finance application with JWT authentication, transaction management, budget tracking, ML-based expense categorization and spending predictions.</p><div class="tags"><span>React</span><span>FastAPI</span><span>MySQL</span><span>Scikit-learn</span></div><a class="project-link" href="https://github.com/navyasrichikoti" target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-crop"><div class="crop-sun"></div><div class="crop-leaf">✳</div><span class="art-tag">AI FOR AGRICULTURE</span><span class="art-index">03</span></div>
+          <div class="project-info"><div class="project-type">SMART INDIA HACKATHON</div><h3>Multilingual Smart Crop Advisory</h3><p>A team-built farmer advisory platform combining crop recommendations, market-price prediction, multilingual access and CNN-based plant disease detection.</p><div class="tags"><span>Python</span><span>CNN</span><span>Computer Vision</span><span>AI</span></div><a class="project-link" href="https://github.com/navyasrichikoti" target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art art-loan"><div class="loan-ring"><span>ML</span></div><span class="art-tag">PREDICTIVE ANALYTICS</span><span class="art-index">04</span></div>
+          <div class="project-info"><div class="project-type">MACHINE LEARNING</div><h3>Loan Approval Prediction</h3><p>An end-to-end classification pipeline with exploratory data analysis, missing-value handling, feature engineering and model evaluation.</p><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span></div><a class="project-link" href="https://github.com/navyasrichikoti" target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="tiny-note">Project links currently open your GitHub profile. Replace them with individual repository links when ready.</p>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / THE JOURNEY SO FAR</p>
+        <h2>Always learning.<br><span class="gradient-text">Always building.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">JUL — OCT 2026</div><div class="timeline-content"><span class="timeline-label">VIRTUAL INTERNSHIP</span><h3>Infosys Springboard · Internship 7.0</h3><p>Contributed to an AI Startup Idea Validator, including multi-agent workflows, input and output guardrails, loop protection, retries and test scenarios.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">JUL — SEP 2026</div><div class="timeline-content"><span class="timeline-label">TRAINING & PROJECT PROGRAM</span><h3>Geonixa · AI/ML</h3><p>Developed an AI Finance Assistant with a React frontend, FastAPI backend, MySQL database and machine-learning features.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">2024 — 2028</div><div class="timeline-content"><span class="timeline-label">UNDERGRADUATE EDUCATION</span><h3>SR University</h3><p>B.Tech in Computer Science & Engineering (AI/ML). Current resume CGPA: 8.3/10.</p></div></article>
+      </div>
+
+      <div class="cert-strip reveal">
+        <span>ALSO LEARNING</span>
+        <div>Artificial Intelligence Primer · Infosys</div>
+        <div>AWS Cloud Security</div>
+        <div>Python Full Stack · AICTE–EduSkills</div>
+        <div>Data Visualization · Forage</div>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="contact-glow"></div>
+      <div class="contact-content reveal">
+        <p class="eyebrow">05 / HAVE A PROJECT IN MIND?</p>
+        <h2>Let's build something<br><span class="gradient-text">meaningful.</span></h2>
+        <p>Open to AI/ML, Generative AI, software engineering and data-focused opportunities.</p>
+        <a class="btn btn-primary contact-button" href="mailto:navyasrichikoti503@gmail.com">Say hello <span>↗</span></a>
+
+        <div class="contact-links">
+          <a href="mailto:navyasrichikoti503@gmail.com">Email ↗</a>
+          <a href="https://github.com/navyasrichikoti" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/navyasri-chikoti-5355b2350" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="contact-coordinate">17°N · INDIA<br>BUILDING THE FUTURE</div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home">N<span>.</span>C<span class="brand-dot">_</span></a>
+    <p>Designed with curiosity. Built with code.</p>
+    <span>© <span id="year"></span> NAVYASRI CHIKOTI</span>
+  </footer>
+</body>
+</html>
